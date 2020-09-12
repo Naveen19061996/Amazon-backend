@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require('cors');
-const stripe = require("stripe")("sk_test_51HQ7McK5kDBwb903rWrsvVfCnaJEWO1oJfzMEMDtKksRgl8VdGIG9Y8BitICEKHbIPlbzlsMXuDkwd5DkZ5gORnR00qoFLthOW");
+const stripe = require("stripe")("place your scecret key here");
 
 app.use(cors({ origin: true }));
 app.use(express.json());
