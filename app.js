@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require('cors');
-import key from './secret.json'
+const key = require('./secret.json');
 const stripe = require("stripe")(key);
 
 app.use(cors({ origin: true }));
